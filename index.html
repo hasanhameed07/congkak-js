@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+		<!--- The first ever online 2 player Congkak game.  -->
+		<!--- Developed by Hasan Hameed <hasan.hameed07@gmail.com> -->
+		<!--- Made in Pakistan -->
+    <title>Congkak - The first ever online 2 player Congkak game. [by Hasan Hameed]</title>
+		<link  rel="stylesheet" type="text/css"  href="assets/css/style.css" media="all" />
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" href="assets/css/sweetalert.css">
+	</head>
+	<body>
+
+		<h1>
+			Congkak
+		</h1>
+
+		<div  id="congkak"></div>
+
+		<div class="corner-ribbon bottom-right sticky green shadow"><a href="mailto:hasan.hameed07@gmail.com">Developed by Hasan Hameed<br/>hasan.hameed07@gmail.com</a></div>
+
+		<!-- sweetalert -->
+		<script src="assets/js/sweetalert.min.js"></script>
+
+		<!-- congkak -->
+		<script src="lib/congkak-queue.js"></script>
+		<script src="lib/congkak-view.js"></script>
+		<script src="lib/congkak-seeds.js"></script>
+		<script src="lib/congkak-loop.js"></script>
+		<script src="lib/congkak.js"></script>
+		<script>
+			$(function(){
+				Congkak.init('#congkak');
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,175 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  color: #eee;
+  background-image: url(../img/table.jpg);
+   background-size: 100%;
+   cursor:default;
+}
+h1 {
+  text-align: center;
+  margin: 60px auto;
+  color: rgb(0, 0, 0);
+  font-size: 52px;
+  text-shadow: rgb(248, 204, 143) 0px -1px 1px;
+}
+h1 small {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#congkak {
+  text-align: center;
+  margin: 4% auto;
+}
+.congkak {
+  width: 840px;
+  padding: 16px;
+  border-radius: 90px;
+  overflow:hidden;
+  margin:40px auto;
+  background-image: url(../img/texture-bg.jpg);
+  box-shadow: 1px 5px 20px 0px #000;
+  color:#333;
+}
+.congkak div {
+  float: left;
+  text-align:center;
+  font-weight:bold;
+}
+.storehouse-p1, .storehouse-p2 {
+  width: 140px;
+  height: 140px;
+  border: 2px solid transparent;
+  line-height: 9;
+  border-radius: 70px;
+  margin: 0 12px;
+  box-shadow: inset 1px 1px 8px #333;
+}
+.housesP1 {
+  clear: both;
+}
+.house {
+  border: 2px solid transparent;
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  line-height: 4;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: inset 1px 1px 5px #333;
+}
+.house.turn:hover {
+  border-color: #F3A046;
+  cursor: pointer;
+}
+.house.turn.player2:hover {
+  border-color: #D4D663;
+}
+
+.house, .storehouse-p1, .storehouse-p2 {
+  transition: background .2s linear, font-size .2s linear, line-height .2s linear;
+}
+.fade {
+  background: #F3A046;
+  font-size:20px;
+  line-height: 3;
+}
+.fade.player2 {
+  background: #D4D663;
+}
+.storehouse-p1.fade, .storehouse-p2.fade {
+  line-height: 7;
+}
+.burnt {
+  background-color: #EEB96F;
+}
+.text-p1, .text-p2 {
+  text-shadow: 0px 1px 3px #000;
+  transition: font-size .2s linear, line-height .2s linear;
+}
+.text-p1.active, .text-p2.active {
+  font-size: 20px;
+  text-shadow: 0px 3px 3px #000;
+}
+.text-p1 {
+  color: #FBB364;
+}
+.text-p2 {
+  color: #B0E380;
+}
+.sweet-alert button.cancel {
+  background-color: #99D0EA!important;
+}
+
+
+/* The ribbons */
+
+.corner-ribbon{
+  width: 300px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 18px;
+  padding: 10px;
+  letter-spacing: 1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  font-size: 12px;
+}
+
+.corner-ribbon a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right{
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-left{
+  top: auto;
+  bottom: 25px;
+  left: -50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-right{
+  top: auto;
+  right: -70px;
+  bottom: 60px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+.corner-ribbon.green{background: #2c7;}
+
+.corner-ribbon.red{background: #e43;}
